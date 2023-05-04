@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Chat with RadiXGPT - RadiXGPT</title>
+    <!-- Add your existing styles or style section here -->
+</head>
+
+<body>
+    <header>
+        <nav>
+          <a href="#" class="logo">RadiXGPT</a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="get_started.html">Get Started</a></li>
+            <li><a href="submit_report.html">Submit Report</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <div class="header">Chat with RadiXGPT</div>
+        <h3>Your Personal Radiology Assistant: Fine-Tuned Chatbot Powered by GPT-4</h3>
+        <div class="chat-history border rounded p-2 mb-2" style="width: 100%; height: 300px; overflow-y: auto;">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <form id="chat-form">
+            <input
+                type="text"
+                id="chat-input"
+                autocomplete="off"
+                placeholder="Type your message here"
+                required
+                class="form-control"
+                aria-label="Type your message here..."
+            />
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <button class="btn btn-secondary" id="endChatBtn">Thank You</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#endChatBtn").on("click", function() {
+                const chatHistory = $(".chat-history");
+                chatHistory.append("<p><strong>RadiXGPT:</strong> Thank you for using RadiXGPT. Have a great day!</p>");
+                chatHistory.scrollTop(chatHistory[0].scrollHeight);
+            });
+        });
+    </script>
+</body>
+
+</html>

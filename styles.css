@@ -7,7 +7,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background: linear-gradient(135deg, #6b2eff, #ff2eef);
     min-height: 100vh;
     display: flex;
@@ -49,14 +49,14 @@
   
   nav a {
     text-decoration: none;
-    color: white;
+    color: red;
     font-size: 18px;
     padding: 10px;
     transition: color 0.3s;
   }
   
   nav a:hover {
-    color: #ddd;
+    color: #ff0000;
   }
   
   .hero {
