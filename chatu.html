@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  
+    body {
+      color: #212529;
+      background-color: #f8f9fa;
+      font-family: "Roboto", sans-serif;
+    }
+    
+    #chat-window {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(223, 40, 192, 0.3);
+      border-radius: 15px;
+      padding: 20px;
+      flex-direction: column;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px rgba(223, 40, 192, 0.2);
+    }
+    
+    .main-title {
+      background-color: rgba(33, 37, 41, 0.8);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(33, 37, 41, 0.2);
+    }
+    
+    form#chat-form {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    #chat-input {
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      padding: 10px;
+      font-size: 1rem;
+      transition: all 0.3s;
+      width: 75%;
+      margin-right: 10px;
+    }
+    
+    #chat-input:focus {
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+    
+    button[type="submit"] {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 15px;
+      transition: all 0.3s;
+      font-size: 1rem;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+    #chat-messages {
+      height: 500px;
+      overflow-y: scroll;
+      background-color: white;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.05) inset;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    #chat-messages::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    #chat-messages::-webkit-scrollbar-thumb {
+      background-color: #0d6efd;
+      border-radius: 10px;
+    }
+    
+    #chat-messages::-webkit-scrollbar-thumb:hover {
+      background-color: #0d6efd;
+    }
+    .message-user {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-end;
+    }
+    
+    .message-user .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+    
+    .message-user .text-box {
+      background-color: #0d6efd;
+      color: white;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 60%;
+    }
+    
+    .message-bot {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .message-bot .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ddd;
+      margin-left: 10px;
+    }
+    
+    .message-bot .text-box {
+      background-color: #6c757d;
+      color: white;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 60%;
+    }
+    .timestamp {
+      font-size: 0.8rem;
+      color: #ddd;
+      margin-top: 10px;
+      text-align: right;
+    }
+    
+    .message-user .timestamp {
+      margin-left: auto;
+    }
+    
+    .message-bot .timestamp {
+      margin-right: auto;
+    }
+    .loading {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .loading img {
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+  </style>
+  <body>
+    <div id="chat-window">
+      <div class="main-title">CHAT BOT USING CHAT-GPT</div>
+      <div id="chat-messages"></div>
+      <form id="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          autocomplete="off"
+          placeholder="Type your message here"
+          required
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
