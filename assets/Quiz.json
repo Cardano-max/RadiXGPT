@@ -1,0 +1,208 @@
+{
+    "quiz": {
+        "sport": {
+            "q1": {
+                "question": "Which team won the English Premier League in the 2020-2021 season?",
+                "options": [
+					"Manchester United",
+					"Manchester City",
+					"Liverpool",
+					"Chelsea"                    
+                ],
+                "answer": "Manchester City"
+            },
+			"q2": {
+                "question": "Who is the all-time leading goal scorer in the English Premier League?",
+                "options": [
+				    "Wayne Rooney",
+                    "Alan Shearer",
+                    "Thierry Henry",
+                    "Cristiano Ronaldo"
+                ],
+                "answer": "Alan Shearer"
+            },
+			"q3": {
+                "question": "Who is the highest run-scorer in the history of Pakistan cricket?",
+                "options": [
+                    "Inzamam-ul-Haq",
+                    "Javed Miandad",
+                    "Muhammad Yousaf",
+                    "Babar Azam"
+                ],
+                "answer": "Muhammad Yousaf"
+            },
+			"q4": {
+                "question": "Who holds the record for the highest individual score by a Pakistani batsman in Test cricket?",
+                "options": [
+                    "Hanif Mohammad",
+                    "Younis Khan",
+                    "Azhar Ali",
+                    "Inzamam-ul-Haq"
+                ],
+                "answer": "Hanif Mohammad"
+            },
+			"q5,": {
+                "question": "Which team has won the most English Premier League titles?",
+                "options": [
+                    "Manchester United",
+                    "Liverpool",
+                    "Arsenal",
+                    "Chelsea"
+                ],
+                "answer": "Manchester United"
+            },
+			"q6": {
+                "question": "Which Pakistani cricketer has taken the most wickets in Test matches?",
+                "options": [
+                    "Waqar Younis",
+                    "Wasim Akram",
+                    "Mushtaq Ahmad",
+                    "Saqlain Mushtaq"
+                ],
+                "answer": "Wasim Akram"
+            },
+			"q7": {
+                "question": "Who holds the record for the most assists in a single English Premier League season?",
+                "options": [
+                    "Mesut Ozil",
+                    "Kevin De Bruyne",
+                    "Thierry Henry",
+                    "Frank Lampard"
+                ],
+                "answer": "Kevin De Bruyne"
+            },
+			"q8": {
+                "question": "Who is the current captain of the Pakistan national cricket team in One-Day Internationals (ODIs)?",
+                "options": [
+                    "Babar Azam",
+                    "Shoaib Malik",
+                    "Muhammad Rizwan",
+                    "Sarfaraz Ahmed"
+                ],
+                "answer": "Babar Azam"
+            },
+			"q9": {
+                "question": "Which club has the highest number of consecutive English Premier League titles?",
+                "options": [
+                    "Manchester United",
+                    "Arsenal",
+                    "Chelsea",
+                    "Manchester City"
+                ],
+                "answer": "Manchester United"
+            },
+			"q10": {
+                "question": "Which Pakistani cricketer has the highest number of centuries in T20 International cricket?",
+                "options": [
+                    "Shoaib Malik",
+                    "Ahmed Shehzad",
+                    "Babar Azam",
+                    "Muhammad Hafeez"
+                ],
+                "answer": "Babar Azam"
+            }
+        },
+        "engineering": {
+            "q1": {
+                "question": "What is the determinant of a 3x3 matrix?",
+                "options": [
+                    "It is always 1",
+                    "It is always 0",
+                    "It can be any real number",
+                    "It depends on the entries of the matrix"
+                ],
+                "answer": "It depends on the entries of the matrix"
+            },
+            "q2": {
+                "question": "What is the median of a dataset?",
+                "options": [
+                    "The most frequently occurring value in the dataset.",
+                    "The arithmetic average of all the values in the dataset.",
+                    "The middle value when the dataset is arranged in ascending order.",
+                    "The difference between the highest and lowest values in the dataset."
+                ],
+                "answer": "The middle value when the dataset is arranged in ascending order."
+            },
+			"q3": {
+                "question": "What does it mean for a matrix to be invertible?",
+                "options": [
+                    "The matrix has no inverse.",
+                    "The matrix has a unique inverse.",
+                    "The matrix has inifinitely many inverses.",
+                    "The matrix is a diagnol matrix."
+                ],
+                "answer": "The matrix has a unique inverse."
+            },
+            "q4": {
+                "question": "What is the purpose of a microcontroller in an electronic system?",
+                "options": [
+                    "To control the power supply of the system.",
+                    "To provide communication interfaces for external devices.",
+                    "To execute a program and perform specific tasks or functions.",
+                    "To regulate the temperature of the electronic components."
+                ],
+                "answer": "To execute a program and perform specific tasks or functions."
+            },
+			"q5": {
+                "question": "What is the purpose of a standard deviation in statistics?",
+                "options": [
+                    "To measure the spread or variability of data points in a dataset.",
+                    "To determine the central tendency of a dataset.",
+                    "To identify outliers in a dataset.",
+                    "To calculate the probability of an event occurring."
+                ],
+                "answer": ""
+            },
+            "q6": {
+                "question": "In a system of linear equations, when does the solution exist?",
+                "options": [
+                    "The solution always exists.",
+                    "The solution exists if and only if the system is inconsistent.",
+                    " The solution exists if and only if the system is homogeneous.",
+                    "The solution exists if and only if the system is consistent and has a unique solution."
+                ],
+                "answer": "The solution exists if and only if the system is consistent and has a unique solution."
+            },
+			"q7": {
+                "question": "What is image segmentation in digital image processing?",
+                "options": [
+                    "The process of enhancing the resolution of an image.",
+                    "The process of converting a color image to grayscale.",
+                    "The process of dividing an image into meaningful regions or objects.",
+                    "The process of reducing the size of an image without significant loss of quality."
+                ],
+                "answer": "The process of dividing an image into meaningful regions or objects."
+            },
+            "q8": {
+                "question": "What is the difference between a microcontroller and a microprocessor?",
+                "options": [
+                    "Microcontrollers are used in embedded systems, while microprocessors are used in personal computers.",
+                    "Microcontrollers have built-in memory and peripherals, while microprocessors require external components.",
+                    "Microcontrollers have higher processing power than microprocessors.",
+                    "Microprocessors are typically smaller in size compared to microcontrollers."
+                ],
+                "answer": "Microcontrollers have built-in memory and peripherals, while microprocessors require external components."
+            },
+			"q9": {
+                "question": "What is the purpose of a low-pass filter in image processing?",
+                "options": [
+                    "To enhance the high-frequency components of an image.",
+                    "To remove noise or high-frequency details from an image.",
+                    "To convert a color image to grayscale.",
+                    "To detect and enhance edges in an image."
+                ],
+                "answer": "To remove noise or high-frequency details from an image."
+            },
+            "q10": {
+                "question": "What does the p-value represent in hypothesis testing?",
+                "options": [
+                    "The likelihood of making a Type II error.",
+                    "The level of significance for rejecting the null hypothesis.",
+                    "The strength of the relationship between two variables.",
+                    "The probability of observing the test statistic or a more extreme value, assuming the null hypothesis is true."
+                ],
+                "answer": "The probability of observing the test statistic or a more extreme value, assuming the null hypothesis is true."
+            }
+        }
+    }
+}
